@@ -1,0 +1,166 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  font-family: "Poppins", "Segoe UI", Verdana, sans-serif;
+  background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Jumbotron Header */
+.jumbotron {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+}
+
+.jumbotron h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Search Section */
+.col-sm-4 {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+#search-city {
+  border: 2px solid #0077b6;
+  border-radius: 6px 0 0 6px;
+}
+
+#search-button {
+  background-color: #0077b6;
+  border-radius: 0 6px 6px 0;
+  transition: background 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #0096c7;
+}
+
+#clear-history {
+  background-color: #f94144;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+#clear-history:hover {
+  background-color: #ef233c;
+}
+
+/* Search History */
+.list-group {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.list-group-item {
+  border: none;
+  background: #ffffff;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+/* Current Weather Card */
+#current-weather {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 1rem 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#current-weather h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.current {
+  font-weight: 500;
+  color: #0077b6;
+}
+
+/* Forecast Section */
+#future-weather h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Forecast Cards */
+.forecast {
+  background: linear-gradient(145deg, #00b4d8, #0077b6);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.forecast p {
+  margin-bottom: 6px;
+}
+
+/* Footer (optional if you uncomment it) */
+footer {
+  margin-top: 2rem;
+  background-color: #f8f9fa;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  border-radius: 12px;
+}
+
+footer a {
+  color: #0077b6;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .col-sm-4,
+  .col-sm-8 {
+    width: 100%;
+  }
+
+  .forecast {
+    margin-bottom: 1rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 1.6rem;
+  }
+}
